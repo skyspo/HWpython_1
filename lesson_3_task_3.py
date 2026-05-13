@@ -11,3 +11,7 @@ mail2 = Mailing(add1, add, 200, "20")
 
 print(mail1)
 print(mail2)
+
+
+
+

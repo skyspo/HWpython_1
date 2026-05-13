@@ -1,16 +1,17 @@
 class Mailing:
     def __init__(self, to_address, from_address, cost, track):
-        self.to_adr = to_address
-        self.from_adr = from_address
+        self.to_address = to_address
+        self.from_address = from_address
         self.cost = cost
         self.track = track
 
     def __str__(self):
-        return (f"Отправление {self.track} из {self.from_adr.index}, "
-                f"{self.from_adr.city}, {self.from_adr.street}"
-                f"{self.from_adr.dom}, {self.from_adr.kv}"
-                f" в {self.to_adr.city}, {self.to_adr.street}"
-                f"{self.to_adr.dom}, {self.to_adr.kv}"
+        return (f"Отправление {self.track} из {self.from_address.index}, "
+                f"{self.from_address.city}, {self.from_address.street},"
+                f" {self.from_address.dom} - {self.from_address.kv}"
+                f" в {self.to_address.index}, {self.to_address.city},"
+                F" {self.to_address.street}, "
+                f"{self.to_address.dom} - {self.to_address.kv}."
                 f" Стоимость {self.cost} рублей"
                 )
                
